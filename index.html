@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript">
 	(function() {
-		var host = 'http://kakureyard.com/kasuka/';
+		var host = 'https://ytakzk.github.io/kasuka/';
 		if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
 			location.href =  host + 'sp-index.html';
 		}
@@ -36,7 +36,7 @@
 			</ul>
 		</nav>
 
-		
+
 		<!-- メインコンテンツ -->
 		<article id="content">
 			<canvas id="canvas" width="800" height="420"></canvas>
@@ -65,7 +65,7 @@
 				<div id="i2-c1c">
 					<p class="title">酒粕</p>
 					<p>老舗酒造「黄桜」で<br>つくられた豊かな<br>風味とコク</p>
-				</div>				
+				</div>
 				<img id="i2-c2" src="images/1-2.jpg" alt="">
 				<div id="i2-c3">
 					<p class="title">素材</p>
@@ -200,7 +200,7 @@ Figure.prototype = {
 			this.alpha-=0.02;
 		} else if (this.mode == 3 && this.alpha < .5 && time > timeTriger[2]) {
 			this.alpha+=0.015;
-		}  
+		}
 
 	},
 	draw: function() {
@@ -283,9 +283,9 @@ function draw() {
 	for (var i = 0; i < figures.length; i++) {
 		figures[i].draw();
 	}
-	ctx.font = 'bold 30px "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif'; 
+	ctx.font = 'bold 30px "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif';
 	verticalwrite(ctx, "粕　　　　菓", 600, 100, textAlpha);
-	ctx.font = 'bold 16px "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif'; 
+	ctx.font = 'bold 16px "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif';
 	verticalwrite(ctx, "大人のちいずけいき", 750, 250, textAlpha);
 };
 
