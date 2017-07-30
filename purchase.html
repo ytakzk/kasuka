@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript">
+	(function() {
+		var host = 'http://kakureyard.com/kasuka/';
+		if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+			location.href =  host + 'sp-index.html';
+		}
+	}());
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/purchase.js"></script>
+	<title>粕菓</title>
+</head>
+<body>
+	<header>
+		<h1>粕菓</h1>
+	</header>
+
+	<div id="wrapper" class="purchase">
+
+<!-- 		<div id="i1-c2">
+			<img src="images/1-0.jpg" />
+			<img src="images/1-1.jpg" />
+			<img src="images/1-2.jpg" />
+			<img src="images/1-3.jpg" />
+		</div> -->
+
+		<div class="left">
+			<section class="description">
+				<h1>原材料について</h1>
+				<p>チーズはフランスよりチーズケーキに適したものを輸入。<br>
+					そのチーズに適したバターもオランダより求め、上質なチーズケーキに仕上げました。<br>					酒粕は良質なアミノ酸を豊富に含んだ酒造メーカー黄桜株式会社のものを使用。<br>
+					同じ発酵食品でもあるチーズと酒粕を組み合わせることで、濃厚なコクと酒粕の風味がマッチした風味豊かなチーズケーキです。<br>
+					食品添加物も一切し使用しておりません。
+				</p>
+			</section>
+
+			<section class="sakekasu">
+				<h1>酒粕について</h1>
+				<ul>
+					<li>
+						<dl>
+							<dt>食物繊維</dt>
+							<dd>便秘の予防、有害物質の吸着、大腸癌の予防が期待される植物繊維を多く含む</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>ビタミン類</dt>
+							<dd>米や米麹、酵母由来のビタミン類（Ｂ１、Ｂ２、ｂ６、パントテン酸など）を多く含む</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>がん細胞を殺す力を増強する成分</dt>
+							<dd>ナチュラルキラー活性（癌細胞だけを殺す作用）を増強させる機能</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>糖尿病予防・肥満防止に効果</dt>
+							<dd>血糖値を下げるインスリン様の物質が含まれる</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>血圧降下作用・健忘症予防のペプチド</dt>
+							<dd>米タンパク質が麹菌の酵素の働きによって生理機能をもつペプチドに分解される</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>その他各種有効成分</dt>
+							<dd>酵母菌体内にはＳ－アデノシルメチオニンという老年認知症や不眠、うつ病に効果がある物質が含まれている</dd>
+						</dl>
+					</li>
+				</ul>
+			</section>			
+		</div>
+
+		<form action="post.php" method="POST" id="purchase">
+
+			<img src="images/1-0.jpg" width="300px" />
+
+			<div class="group">
+				<label for="inputNumber" class="col-sm-3 control-label">個数</label>
+				<div class="col-sm-7">
+					<select class="form-control" name="number" onchange="numChanged()">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+			</div>
+			<div class="group">
+				<label for="dispAmount" class="col-sm-3 control-label">金額</label>
+				<div class="col-sm-7">
+					<p><span class="form-control-static" id="amount">1800</span><span>円+送料700円</span></p>
+				</div>
+			</div>
+			<div class="group">
+				<label for="dispAmount" class="col-sm-3 control-label">合計</label>
+				<div class="col-sm-7">
+					<p><span class="form-control-static" id="total">2500</span><span>円</span></p>
+				</div>
+			</div>
+			<div>
+			<script
+			src="https://s.yimg.jp/images/wallet/fastpay/js/2.0.0/fastpay.js" class="fastpay-button"
+			data-key="V651dMu4ZkhnaSZdN9MvNV2C"
+			data-amount= total
+			data-redirect="https:/fastpay.yahoo.co.jp/docs/flow/redirect"
+			>
+			</script>
+			</div>
+		</form>
+
+	</div>
+	<footer class="noMargin">
+		<div id="i6-1">
+			<h1>お問い合わせ</h1>
+			<ul>
+				<li>kakureyado.</li>
+				<li>t/090-1234-5678</li>
+				<li>m/info@kakureyard.com</li>
+			</ul>
+
+			<img id="i6-b1" src="images/bg6-1.png" alt="">
+			<img id="i6-b2" src="images/bg6-2.png" alt="">
+		</div>
+	</footer>
+
+</body>
+</html>
