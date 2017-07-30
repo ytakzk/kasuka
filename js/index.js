@@ -1,4 +1,4 @@
-var host = 'http://kakureyard.com/kasuka/';
+var host = 'https://ytakzk.github.io/kasuka/';
 
 // Set a position of a sidebar to the center.
 function setHeightToCenter( content ) {
@@ -60,10 +60,10 @@ $(function(){
       var imgBox = $('#i1-c2');
       var fadeSpeed = 1000;
       var switchDelay = 5000;
-       
+
       imgBox.find('img').hide();
       imgBox.find('img:first').stop().fadeIn(fadeSpeed);
-   
+
       setInterval(function(){
           imgBox.find('img:first-child').fadeOut(fadeSpeed)
           .next('img').fadeIn(fadeSpeed)

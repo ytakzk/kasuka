@@ -1,4 +1,4 @@
-var host = 'http://kakureyard.com/kasuka/';
+var host = 'https://ytakzk.github.io/kasuka/';
 var total = 0;
 $(function(){
   numChanged();
